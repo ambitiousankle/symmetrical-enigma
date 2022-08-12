@@ -1,32 +1,34 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main (){
+    int n1,n2;
+    cout<<"input your number :";
+    cin>>n1>>n2;
 
-# Precompiled Headers
-*.gch
-*.pch
+    char op;
+    cout<<"input your operator :";
+    cin>>op;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    switch(op)
+    {
+        case '+':
+        cout<<n1+n2<<endl;
+        break;
+        
+        case '-':
+        cout<<n1-n2<<endl;
+        break;
 
-# Fortran module files
-*.mod
-*.smod
+        case '*':
+        cout<<n1*n2<<endl;
+        break;
+        
+        case '/':
+        cout<<n1/n2<<endl;
+        break;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+        default:
+        cout<<"enter another operator"<<endl;
+        break;
+    }
